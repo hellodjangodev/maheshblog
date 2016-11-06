@@ -1,0 +1,13 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+  <div class="container">
+
+    {% for about_me_object in about_me %}
+        <h2>{{ about_me_object.title }}</h2>
+        <p>{{ about_me_object.text }}</p>
+    {% endfor %}
+
+  </div>
+
+{% endblock %}
